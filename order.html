@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Lover Restaurant</title>
+        
+        <!-- font-awesome link here -->
+        <link rel="stylesheet" href="fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- style link here -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="favicon/favicon.svg" type="image/svg+xml">
+    </head>
+
+    <body id="top">
+        <!-- NavBar -->
+        <header class="header" id="head">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div> 
+            <nav class="navbar">
+                <a href="index.html">HOME</a>
+                <a href="index.html">ABOUT</a>
+                <a href="gallery.html">GALLERY</a>
+                <a href="menu.html">MENUS</a>
+                <a href="review.html">REVIEWS</a>
+                <a href="team.html">TEAM</a>
+                <a href="order.html">ORDER</a>
+                <a href="#Contact">CONTACT</a>
+            </nav> 
+            <div class="icon">
+                <input type="search" name="search" class="search">
+                <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="icons">
+                <div id="menu-bar" class="fas fa-bars"></div>
+            </div>
+        </header>
+        <!-- NavBar -->
+
+        <!-- Home -->
+        <section class="home" id="Home">
+            <div class="main-home">
+                <div class="home-inner-content">
+                    <div class="home-image">
+                        <img src="images/backgroundcontent.png" alt="imgHome">
+                    </div>
+                </div>
+                <div class="home-inner-content">
+                    <div class="home-text-content">
+                        <h1>Contact Us For Best Breakfast</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, voluptatem officiis quas illum pariatur, sint amet dignissimos asperiores</p>
+                        <a href="#Contact">contact us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Home -->
+
+        <!--Order-->
+        <section class="order" id="Order">
+            <div class="heading">
+                <span>order now</span>
+                <h3>fast home delivery</h3>
+            </div>
+            <form action="Thanks.html" method="Get">
+                <div class="box-container">
+                    <div class="box">
+                        <div class="inputBox">
+                            <span>full name</span>
+                            <input type="text" name="fullName" placeholder="enter your name" required pattern="^([a-zA-Z]{3,})+\s+([a-zA-Z\s]{3,})+$">
+                        </div>
+                        <div class="inputBox">
+                            <span>food name</span>
+                            <input type="text" name="foodName" placeholder="food you want" required list="foodName" autocomplete="off">
+                            <datalist id="foodName">
+                                <option value="Chicken Buger1"></option>
+                                <option value="Double beef Buger1"></option>
+                                <option value="beef Buger"></option>
+                                <option value="Chicken Buger2"></option>
+                                <option value="Snacks1"></option>
+                                <option value="Cold Meat"></option>
+                                <option value="Shrimp"></option>
+                                <option value="Crispy Chicken"></option>
+                                <option value="Double Beef Burger2"></option>
+                                <option value="Snacks2"></option>
+                                <option value="Chicken & Snacks"></option>
+                                <option value="Fish & Shrimp"></option>
+                            </datalist>
+                        </div>
+                        <div class="inputBox">
+                            <span>order details(specifics with food)</span> 
+                            <div>
+                                <span style="display: inline-block;">
+                                    <input id="D1" type="checkbox" name="orderDetails1" value="1">
+                                    <label for="D1">Mozzarella</label>
+                                    <input id="D2" type="checkbox" name="orderDetails2" value="2">
+                                    <label for="D2">Tahini</label>
+                                </span>
+                                <span style="display: inline-block;">
+                                    <input id="D3" type="checkbox" name="orderDetails3" value="3">
+                                    <label for="D3">Hot Sauce</label>
+                                    <input id="D4" type="checkbox" name="orderDetails4" value="4">
+                                    <label for="D4">Katchup</label>
+                                </span>
+                            </div>       
+                        </div>
+                        <div class="inputBox">
+                            <span>your address</span>
+                            <textarea name="yourAddress" placeholder="enter your address" id="yourAddress" cols="30" rows="10" required></textarea>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inputBox">
+                            <span>number</span>
+                            <input type="tel" name="yourNumber" placeholder="enter your number like:0201xxxxxxxxx" pattern="^(02)(010|012|011|015)\d{8}$" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>how many</span>
+                            <input type="number" name="numberOrder" placeholder="how many you want" required min=1 max=50>
+                        </div>
+                        <div class="inputBox">
+                            <span>when you want</span>
+                            <input type="datetime-local" name="wantIt" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>our address</span>
+                            <iframe class="map" name="yourLocation" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60307.59083109428!2d72.840725!3d19.141651!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1642222128240!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="order now" class="btn">
+
+            </form>
+        </section>
+        <!--Order-->
+
+        <!--Img End -->
+        <div class="containerImg">
+            <img src="images/Picture1.png" alt="before" class="before">
+        </div>
+        <!--Img End -->
+
+        <!--Footer-->
+        <footer>
+            <div class="main-footer">
+                <div class="footer-logo"><img src="images/footerlogo.png" alt=""></div>
+            </div>
+            <div class="footer_main">
+                <div class="footer_tag">
+                    <h2>Location</h2>
+                    <p>Egypt</p>
+                    <p>USA</p>
+                    <p>Chaina</p>
+                    <p>Japan</p>
+                    <p>Italy</p>
+                </div>
+                <div class="footer_tag">
+                    <h2>Quick Link</h2>
+                    <a href="#Home">Home</a>
+                    <a href="#About">About</a>
+                    <a href="#Gallary">Gallary</a>
+                    <a href="#Menu">Menus</a>
+                    <a href="#Order">Order</a>
+                </div>
+                <div class="footer_tag" id="Contact">
+                    <h2>Contact</h2>
+                    <p>+20 12 4568 102</p>
+                    <p>+94 25 5568456</p>
+                    <a href="mailto:mernamamdouh2@gmail.com?subject=Hello" target="_blank">mernamamdouh2@gmail.com</a>
+                    <a href="mailto:foodloverR@gmail.com?subject=Hello" target="_blank">foodloverR@gmail.com</a>
+                </div>
+                <div class="footer_tag">
+                    <h2>Our Service</h2>
+                    <p>Fast Delivery</p>
+                    <p>Easy Payments</p>
+                    <p>24 x 7 Service</p>
+                </div>
+                <div class="footer_tag">
+                    <h2>Follows</h2>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+            <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> Merna Mamdouh</span></p>
+        </footer>
+        <!--Footer-->
+
+        <!--BACK TO TOP-->
+        <a href="#top" class="linkUp" data-scroll="up">
+            <svg width="40px" id="toUp" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(-111 -148)">
+                <g id="Layer2">
+                    <path d="m141 164c0-7.727-6.273-14-14-14s-14 6.273-14 14 6.273 14 14 14 14-6.273 14-14zm-19.918 3.716c4.228-4.228 3.659-3.659 5.579-5.579.094-.094.221-.146.353-.146.133 0 .26.052.354.146 1.868 1.868 5.55 5.551 5.55 5.551.391.39 1.024.39 1.415 0 .39-.391.39-1.024 0-1.415 0 0-3.682-3.682-5.551-5.55-.469-.469-1.105-.732-1.768-.732s-1.298.263-1.767.732c-1.92 1.919-1.351 1.351-5.58 5.579-.39.391-.39 1.024 0 1.414.391.391 1.024.391 1.415 0z" fill="#000000" style="fill: #fac031;"></path>
+                </g>
+            </g>
+            </svg>
+        </a>        
+        <!--BACK TO TOP-->
+
+
+        <!-- scroll reveal javascript link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       
+        <!-- javascript link here -->
+        <script src="script.js"></script>
+
+    </body>
+</html>
