@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Food Lover Restaurant</title>
+        <title>Food Lover Cart</title>
         
         <!-- font-awesome link here -->
         <link rel="stylesheet" href="fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
@@ -27,7 +27,7 @@
                 <a href="index.html#about">ABOUT</a>
                 <a href="gallery.html#gallery">GALLERY</a>
                 <a href="menu.html#menu">MENUS</a>
-                <a class="active" href="#review">REVIEWS</a>
+                <a href="review.html#review">REVIEWS</a>
                 <a href="team.html#team">TEAM</a>
                 <a href="order.html#order">ORDER</a>
                 <a href="#contact">CONTACT</a>
@@ -35,8 +35,8 @@
             <div class="icon">
                 <i class="fa-solid fa-search" id="searchBtn"></i>
                 <i class="fa-solid fa-heart"></i>
-                <a class="button-menu button-cart" href="cart.html">
-                    <i class="fa-solid fa-cart-shopping"></i><span id="number" class="number">0</span>
+                <a class="boton-menu boton-cart" href="cart.html">
+                    <i class="fa-solid fa-cart-shopping" style="color: #fac031;"></i>
                 </a>
                 <form action="" class="search-form">
                     <input type="search" id="search-box" placeholder="search here..." class="search">
@@ -68,124 +68,36 @@
             </article>
             <!-- Home -->
 
-            <!--Review-->
-            <article class="review" id="review">
-                <h1>Customer<span>Review</span></h1>
-                <div class="review_box">
-                    <div class="review_card">
-                        <div class="review_profile">
-                            <img src="images/review_1.png" alt="review1">
+            <!-- Cart -->
+            <article class="cart" id="cart">
+                <h1 class="shopping-cart">Shopping Cart</h1>
+                <div class="container-cart">
+                    <p id="empty-cart" class="empty-cart">Your Cart is Empty. 
+                        <i class="fa-regular fa-face-frown"></i>
+                    </p> 
+                        
+                    <div id="cart-products" class="cart-products disabled">
+                        <!-- code js -->
+                    </div>
+
+                    <div id="cart-procedures" class="cart-procedures disabled">
+                        <div class="cart-procedures-remaining">
+                            <button id="cart-procedures-empty" class="cart-procedures-empty">Empty Cart</button>
                         </div>
-                        <div class="review_text">
-                            <h2 class="name">Mary Ali</h2>
-                            <div class="review_icon">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
+                        <div class="cart-procedures-correctly">
+                            <div class="cart-procedures-total">
+                                <p>Total:</p>
+                                <p id="total">$10.00</p>
                             </div>
-                            <div class="review_social">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellents quam facer 
-                                bandit's in fugit tempore necessitating aliquot. Id adiposis, rem corrupts 
-                                asperities distinction selectus quae quia tenter total laboriously quam. Lorem ipsum, 
-                                dolor sit amet consectetur adipisicing elit.
-                            </p>
+                            <button id="cart-procedures-buy" class="cart-procedures-buy">Buy Now</button>
                         </div>
                     </div>
 
-                    <div class="review_card">
-                        <div class="review_profile">
-                            <img src="images/review_2.png" alt="review2">
-                        </div>
-                        <div class="review_text">
-                            <h2 class="name">John Deo</h2>
-                            <div class="review_icon">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                            </div>
-                            <div class="review_social">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
-                                blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
-                                asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
-                                dolor sit amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="review_card">
-                        <div class="review_profile">
-                            <img src="images/review_3.png" alt="review3">
-                        </div>
-                        <div class="review_text">
-                            <h2 class="name">Sara Hassan</h2>
-                            <div class="review_icon">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                            </div>
-                            <div class="review_social">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
-                                blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
-                                asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
-                                dolor sit amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="review_card">
-                        <div class="review_profile">
-                            <img src="images/review_4.png" alt="review4">
-                        </div>
-                        <div class="review_text">
-                            <h2 class="name">Jozef Adel</h2>
-                            <div class="review_icon">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                            </div>
-                            <div class="review_social">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
-                                blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
-                                asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
-                                dolor sit amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                    </div>
+                    <p id="cart-buy" class="cart-buy disabled">Thank you very much for your buy.
+                         <i class="fa-regular fa-face-laugh-beam"></i></p>
                 </div>
             </article>
-            <!--Review-->
+            <!-- Cart -->
 
             <!--Img End -->
             <article class="containerImg">
@@ -259,12 +171,13 @@
             <img src="images/loader.gif" alt="load">
         </div>
         <!-- Loading -->
-    
+
         <!-- scroll reveal javascript link -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+       
         <!-- javascript link here -->
         <script src="script.js"></script>
+        <script src="script-cart.js"></script>
 
     </body>
 </html>

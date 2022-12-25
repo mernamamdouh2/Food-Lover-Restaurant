@@ -23,20 +23,24 @@
                 <img src="images/logo.png" alt="logo">
             </div> 
             <nav class="navbar">
-                <a href="index.html">HOME</a>
-                <a href="index.html">ABOUT</a>
-                <a href="#Gallary">GALLERY</a>
-                <a href="menu.html">MENUS</a>
-                <a href="review.html">REVIEWS</a>
-                <a href="team.html">TEAM</a>
-                <a href="order.html">ORDER</a>
-                <a href="#Contact">CONTACT</a>
+                <a href="index.html#home">HOME</a>
+                <a href="index.html#about">ABOUT</a>
+                <a class="active" href="#gallery">GALLERY</a>
+                <a href="menu.html#menu">MENUS</a>
+                <a href="review.html#review">REVIEWS</a>
+                <a href="team.html#team">TEAM</a>
+                <a href="order.html#order">ORDER</a>
+                <a href="#contact">CONTACT</a>
             </nav> 
             <div class="icon">
-                <input type="search" name="search" class="search">
-                <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+                <i class="fa-solid fa-search" id="searchBtn"></i>
                 <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a class="button-menu button-cart" href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i><span id="number" class="number">0</span>
+                </a>
+                <form action="" class="search-form">
+                    <input type="search" id="search-box" placeholder="search here..." class="search">
+                </form>
             </div>
             <div class="icons">
                 <div id="menu-bar" class="fas fa-bars"></div>
@@ -44,182 +48,184 @@
         </header>
         <!-- NavBar -->
 
-        <!-- Home -->
-        <section class="home" id="Home">
-            <div class="main-home">
-                <div class="home-inner-content">
-                    <div class="home-image">
-                        <img src="images/backgroundcontent.png" alt="imgHome">
+        <section>
+            <!-- Home -->
+            <article class="home" id="home">
+                <div class="main-home">
+                    <div class="home-inner-content">
+                        <div class="home-image">
+                            <img src="images/backgroundcontent.png" alt="imgHome">
+                        </div>
+                    </div>
+                    <div class="home-inner-content">
+                        <div class="home-text-content">
+                            <h1>Contact Us For Best Breakfast</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, voluptatem officiis quas illum pariatur, sint amet dignissimos asperiores</p>
+                            <a href="#contact">contact us</a>
+                        </div>
                     </div>
                 </div>
-                <div class="home-inner-content">
-                    <div class="home-text-content">
-                        <h1>Contact Us For Best Breakfast</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, voluptatem officiis quas illum pariatur, sint amet dignissimos asperiores</p>
-                        <a href="#Contact">contact us</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Home -->
+            </article>
+            <!-- Home -->
 
-        <!-- Gallery -->
-        <section class="gallery" id="Gallary">
-            <h1>Our<span>Gallery</span></h1>
-            <div class="main-gallery">
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallery1.png" alt="photo1">
+            <!-- Gallery -->
+            <article class="gallery" id="gallery">
+                <h1>Our<span>Gallery</span></h1>
+                <div class="main-gallery">
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallery1.png" alt="photo1">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallery2.png" alt="photo2">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallery5.png" alt="photo3">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/Hot_dog.jpg" alt="photo4">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/food-galler-img-1.jpg" alt="photo5">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/chocolate_Drink.jpg" alt="photo6">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/food-galler-img-5.jpg" alt="photo7">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/food-galler-img-6.jpg" alt="photo8">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/food-galler-img-3.jpg" alt="photo9">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/lasagna.webp" alt="photo10">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/sandwich.jpg" alt="photo11">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallary_4.jpg" alt="photo12">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallary_5.jpg" alt="photo13">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallary_6.jpg" alt="photo14">
+                        </div>
+                    </div>
+                    
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/pasta.jpg" alt="photo15">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/Spanchi.jpg" alt="photo16">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallary_1.jpg" alt="photo17">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/gallary_2.jpg" alt="photo18">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/juse.jpg" alt="photo19">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/menu-1.jpg" alt="photo20">
+                        </div>
+                    </div>
+                    <div class="inner-gallery">
+                        <div class="gallery-image">
+                            <img src="images/menu-4.jpg" alt="photo21">
+                        </div>
                     </div>
                 </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallery2.png" alt="photo2">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallery5.png" alt="photo3">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/Hot_dog.jpg" alt="photo4">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/food-galler-img-1.jpg" alt="photo5">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/chocolate_Drink.jpg" alt="photo6">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/food-galler-img-5.jpg" alt="photo7">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/food-galler-img-6.jpg" alt="photo8">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/food-galler-img-3.jpg" alt="photo9">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/lasagna.webp" alt="photo10">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/sandwich.jpg" alt="photo11">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallary_4.jpg" alt="photo12">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallary_5.jpg" alt="photo13">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallary_6.jpg" alt="photo14">
-                    </div>
-                </div>
-                
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/pasta.jpg" alt="photo15">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/Spanchi.jpg" alt="photo16">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallary_1.jpg" alt="photo17">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/gallary_2.jpg" alt="photo18">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/juse.jpg" alt="photo19">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/menu-1.jpg" alt="photo20">
-                    </div>
-                </div>
-                <div class="inner-gallery">
-                    <div class="gallery-image">
-                        <img src="images/menu-4.jpg" alt="photo21">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Gallery -->
+            </article>
+            <!-- Gallery -->
 
-        <!-- Enjoy Our Food -->
-        <section class="enjoy-our-food">
-            <div class="food-main-content">
-                <h1>enjoy our food</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quidem sit nostrum pariatur perferendis soluta saepe nam eveniet velit exercitationem iusto, molestias sapiente laborum? Hic, eaque. Voluptatum sit incidunt ipsa.</p>
-            </div>
-        </section>
-        <!-- Enjoy Our Food -->
+            <!-- Enjoy Our Food -->
+            <article class="enjoy-our-food">
+                <div class="food-main-content">
+                    <h1>enjoy our food</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quidem sit nostrum pariatur perferendis soluta saepe nam eveniet velit exercitationem iusto, molestias sapiente laborum? Hic, eaque. Voluptatum sit incidunt ipsa.</p>
+                </div>
+            </article>
+            <!-- Enjoy Our Food --> 
 
-        <!--Img End -->
-        <div class="containerImg">
-            <img src="images/Picture1.png" alt="before" class="before">
-        </div>
-        <!--Img End -->
+            <!--Img End -->
+            <article class="containerImg">
+                <img src="images/Picture1.png" alt="before" class="before">
+            </article>
+            <!--Img End -->
+        </section>
 
         <!--Footer-->
         <footer>
             <div class="main-footer">
-                <div class="footer-logo"><img src="images/footerlogo.png" alt=""></div>
+                <div class="footer-logo"><img src="images/footerlogo.png" alt="logo"></div>
             </div>
             <div class="footer_main">
                 <div class="footer_tag">
                     <h2>Location</h2>
-                    <p>Egypt</p>
-                    <p>USA</p>
-                    <p>China</p>
-                    <p>Japan</p>
-                    <p>Italy</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Egypt</p>
+                    <p><i class="fas fa-map-marker-alt"></i>USA</p>
+                    <p><i class="fas fa-map-marker-alt"></i>China</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Japan</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Italy</p>
                 </div>
                 <div class="footer_tag">
                     <h2>Quick Link</h2>
-                    <a href="index.html">Home</a>
-                    <a href="index.html">About</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="menu.html">Menus</a>
-                    <a href="order.html">Order</a>
+                    <a href="index.html#home" class="links"><i class="fas fa-arrow-right"></i>Home</a>
+                    <a href="index.html#about" class="links"><i class="fas fa-arrow-right"></i>About</a>
+                    <a href="#gallery" class="links"><i class="fas fa-arrow-right"></i>Gallery</a>
+                    <a href="menu.html#menu" class="links"><i class="fas fa-arrow-right"></i>Menus</a>
+                    <a href="order.html#order" class="links"><i class="fas fa-arrow-right"></i>Order</a>
                 </div>
-                <div class="footer_tag" id="Contact">
+                <div class="footer_tag" id="contact">
                     <h2>Contact</h2>
-                    <p>+20 12 4568 102</p>
-                    <p>+94 25 5568456</p>
-                    <a href="mailto:mernamamdouh2@gmail.com?subject=Hello" target="_blank">mernamamdouh2@gmail.com</a>
-                    <a href="mailto:foodloverR@gmail.com?subject=Hello" target="_blank">foodloverR@gmail.com</a>
+                    <a href="#" class="links"><i class="fas fa-phone"></i>+20 12 4568 102</a>
+                    <a href="#" class="links"><i class="fas fa-phone"></i>+94 25 5568456</a>
+                    <a href="mailto:mernamamdouh2@gmail.com?subject=Hello" target="_blank" class="links"><i class="fas fa-envelope"></i>merna.m2@gmail.com</a>
+                    <a href="mailto:foodloverR@gmail.com?subject=Hello" target="_blank" class="links"><i class="fas fa-envelope"></i>foodloverR@gmail.com</a>
                 </div>
                 <div class="footer_tag">
                     <h2>Our Service</h2>
@@ -235,6 +241,7 @@
                     <i class="fa-brands fa-linkedin-in"></i>
                 </div>
             </div>
+            
             <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> Merna Mamdouh</span></p>
         </footer>
         <!--Footer-->
@@ -251,10 +258,15 @@
         </a>      
         <!--BACK TO TOP-->
 
-
+        <!-- Loading -->
+        <div class="loader-container">
+            <img src="images/loader.gif" alt="load">
+        </div>
+        <!-- Loading -->
+    
         <!-- scroll reveal javascript link -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-       
+
         <!-- javascript link here -->
         <script src="script.js"></script>
 

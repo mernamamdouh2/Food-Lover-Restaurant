@@ -1,12 +1,166 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="5;URL=index.html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thanks</title>
-</head>
-<body>
-    <h1 style="text-align: center; color: rgb(179, 37, 172); margin-top: 20%;">Thank you for contacting us, your order will reach you on time...</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta http-equiv="refresh" content="5;URL=index.html"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thanks</title>
+        
+        <!-- font-awesome link here -->
+        <link rel="stylesheet" href="fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- style link here -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="favicon/favicon.svg" type="image/svg+xml">
+    </head>
+
+    <body id="top">
+        <!-- NavBar -->
+        <header class="header" id="head">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div> 
+            <nav class="navbar">
+                <a href="index.html#home">HOME</a>
+                <a href="index.html#about">ABOUT</a>
+                <a href="gallery.html#gallery">GALLERY</a>
+                <a href="menu.html#menu">MENUS</a>
+                <a href="review.html#review">REVIEWS</a>
+                <a href="team.html#team">TEAM</a>
+                <a href="order.html#order">ORDER</a>
+                <a href="#contact">CONTACT</a>
+            </nav> 
+            <div class="icon">
+                <i class="fa-solid fa-search" id="searchBtn"></i>
+                <i class="fa-solid fa-heart"></i>
+                <a class="boton-menu boton-cart" href="cart.html">
+                    <i class="fa-solid fa-cart-shopping" style="color: #fac031;"></i>
+                </a>
+                <form action="" class="search-form">
+                    <input type="search" id="search-box" placeholder="search here..." class="search">
+                </form>
+            </div>
+            <div class="icons">
+                <div id="menu-bar" class="fas fa-bars"></div>
+            </div>
+        </header>
+        <!-- NavBar -->
+
+        <section>
+            <!-- Home -->
+            <article class="home" id="home">
+                <div class="main-home">
+                    <div class="home-inner-content">
+                        <div class="home-image">
+                            <img src="images/backgroundcontent.png" alt="imgHome">
+                        </div>
+                    </div>
+                    <div class="home-inner-content">
+                        <div class="home-text-content">
+                            <h1>Contact Us For Best Breakfast</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, voluptatem officiis quas illum pariatur, sint amet dignissimos asperiores</p>
+                            <a href="#contact">contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Home -->
+
+            <!-- Thank -->
+            <article class="thanks" id="thanks">
+                <h1 class="thank-you">Thank You</h1>
+                <div class="container-thanks">              
+                    <p id="thx-you" class="thx-you">
+                        Thank you for contacting us,<br>
+                        your order will reach you on time...
+                        <i class="fa-regular fa-face-laugh-beam"></i>
+                    </p>
+                </div>
+            </article>
+            <!-- Thank -->
+
+            <!--Img End -->
+            <article class="containerImg">
+                <img src="images/Picture1.png" alt="before" class="before">
+            </article>
+            <!--Img End -->
+        </section>
+
+        <!--Footer-->
+        <footer>
+            <div class="main-footer">
+                <div class="footer-logo"><img src="images/footerlogo.png" alt="logo"></div>
+            </div>
+            <div class="footer_main">
+                <div class="footer_tag">
+                    <h2>Location</h2>
+                    <p><i class="fas fa-map-marker-alt"></i>Egypt</p>
+                    <p><i class="fas fa-map-marker-alt"></i>USA</p>
+                    <p><i class="fas fa-map-marker-alt"></i>China</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Japan</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Italy</p>
+                </div>
+                <div class="footer_tag">
+                    <h2>Quick Link</h2>
+                    <a href="index.html#home" class="links"><i class="fas fa-arrow-right"></i>Home</a>
+                    <a href="index.html#about" class="links"><i class="fas fa-arrow-right"></i>About</a>
+                    <a href="gallery.html#gallery" class="links"><i class="fas fa-arrow-right"></i>Gallery</a>
+                    <a href="menu.html#menu" class="links"><i class="fas fa-arrow-right"></i>Menus</a>
+                    <a href="order.html#order" class="links"><i class="fas fa-arrow-right"></i>Order</a>
+                </div>
+                <div class="footer_tag" id="contact">
+                    <h2>Contact</h2>
+                    <a href="#" class="links"><i class="fas fa-phone"></i>+20 12 4568 102</a>
+                    <a href="#" class="links"><i class="fas fa-phone"></i>+94 25 5568456</a>
+                    <a href="mailto:mernamamdouh2@gmail.com?subject=Hello" target="_blank" class="links"><i class="fas fa-envelope"></i>merna.m2@gmail.com</a>
+                    <a href="mailto:foodloverR@gmail.com?subject=Hello" target="_blank" class="links"><i class="fas fa-envelope"></i>foodloverR@gmail.com</a>
+                </div>
+                <div class="footer_tag">
+                    <h2>Our Service</h2>
+                    <p>Fast Delivery</p>
+                    <p>Easy Payments</p>
+                    <p>24 x 7 Service</p>
+                </div>
+                <div class="footer_tag">
+                    <h2>Follows</h2>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+            
+            <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> Merna Mamdouh</span></p>
+        </footer>
+        <!--Footer-->
+
+        <!--BACK TO TOP-->
+        <a href="#top" class="linkUp" data-scroll="up">
+            <svg width="40px" id="toUp" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(-111 -148)">
+                <g id="Layer2">
+                    <path d="m141 164c0-7.727-6.273-14-14-14s-14 6.273-14 14 6.273 14 14 14 14-6.273 14-14zm-19.918 3.716c4.228-4.228 3.659-3.659 5.579-5.579.094-.094.221-.146.353-.146.133 0 .26.052.354.146 1.868 1.868 5.55 5.551 5.55 5.551.391.39 1.024.39 1.415 0 .39-.391.39-1.024 0-1.415 0 0-3.682-3.682-5.551-5.55-.469-.469-1.105-.732-1.768-.732s-1.298.263-1.767.732c-1.92 1.919-1.351 1.351-5.58 5.579-.39.391-.39 1.024 0 1.414.391.391 1.024.391 1.415 0z" fill="#000000" style="fill: #fac031;"></path>
+                </g>
+            </g>
+            </svg>
+        </a>      
+        <!--BACK TO TOP-->
+
+        <!-- Loading -->
+        <div class="loader-container">
+            <img src="images/loader.gif" alt="load">
+        </div>
+        <!-- Loading -->
+
+        <!-- scroll reveal javascript link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       
+        <!-- javascript link here -->
+        <script src="script.js"></script>
+        <script src="script-cart.js"></script>
+
+    </body>
 </html>

@@ -23,20 +23,24 @@
                 <img src="images/logo.png" alt="logo">
             </div> 
             <nav class="navbar">
-                <a href="#Home">HOME</a>
-                <a href="#About">ABOUT</a>
+                <a class="active" href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
                 <a href="gallery.html">GALLERY</a>
                 <a href="menu.html">MENUS</a>
                 <a href="review.html">REVIEWS</a>
                 <a href="team.html">TEAM</a>
                 <a href="order.html">ORDER</a>
-                <a href="#Contact">CONTACT</a>
+                <a href="#contact">CONTACT</a>
             </nav> 
             <div class="icon">
-                <input type="search" name="search" class="search">
-                <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+                <i class="fa-solid fa-search" id="searchBtn"></i>
                 <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a class="button-menu button-cart" href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i><span id="number" class="number">0</span>
+                </a>
+                <form action="" class="search-form">
+                    <input type="search" id="search-box" placeholder="search here..." class="search">
+                </form>
             </div>
             <div class="icons">
                 <div id="menu-bar" class="fas fa-bars"></div>
@@ -44,97 +48,99 @@
         </header>
         <!-- NavBar -->
 
-        <!-- Home -->
-        <section class="home" id="Home">
-            <div class="main-home">
-                <div class="home-inner-content">
-                    <div class="home-image">
-                        <img src="images/backgroundcontent.png" alt="imgHome">
+        <section>
+            <!-- Home -->
+            <article class="home" id="home">
+                <div class="main-home">
+                    <div class="home-inner-content">
+                        <div class="home-image">
+                            <img src="images/backgroundcontent.png" alt="imgHome">
+                        </div>
                     </div>
-                </div>
-                <div class="home-inner-content">
-                    <div class="home-text-content">
-                        <h1>Contact Us For Best Breakfast</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, voluptatem officiis quas illum pariatur, sint amet dignissimos asperiores</p>
-                        <a href="#Contact">contact us</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Home -->
-
-        <!-- About -->
-        <section id="About" class="about">
-            <div class="main-about">
-                <div class="about-content">
-                    <div class="about-inner-content">
-                        <img class="myimageabout" src="images/Aboutus.png" alt="imgAbout">
-                    </div>
-                </div>
-                <div class="about-content">
-                    <div class="about-inner-content">
-                        <div class="about-text-content">
-                            <h1>About us</h1>
-                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure sunt assumenda quaerat fugiat nesciunt at, provident quae ipsa! Amet explicabo molestiae perspiciatis ut provident mollitia reprehenderit omnis fuga modi voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi doloremque officiis alias similique beatae illum necessitatibus aliquam, hic, digniss</p>
+                    <div class="home-inner-content">
+                        <div class="home-text-content">
+                            <h1>Contact Us For Best Breakfast</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, voluptatem officiis quas illum pariatur, sint amet dignissimos asperiores</p>
+                            <a href="#contact">contact us</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- About -->
+            </article>
+            <!-- Home -->
 
-        <!-- Quality -->
-        <section class="quality">
-            <div class="main-quality">
-                <div class="main-inner-quality">
-                    <div class="quality-content">
-                        <h1>Our food quality</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia obcaecati architecto corporis fugit magni molestiae, itaque molestias beatae quas, eveniet nesciunt quia? Molestias, ab error vitae facere quos qui. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi omnis itaque commodi pariatur quia, minima ullam sunt. Sunt, natus magni laborum ipsam, dolor reprehenderit exercitationem consectetur nesciunt error iure odit!</p>
+            <!-- About -->
+            <article id="about" class="about">
+                <div class="main-about">
+                    <div class="about-content">
+                        <div class="about-inner-content">
+                            <img class="myimageabout" src="images/Aboutus.png" alt="imgAbout">
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <div class="about-inner-content">
+                            <div class="about-text-content">
+                                <h1>About us</h1>
+                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure sunt assumenda quaerat fugiat nesciunt at, provident quae ipsa! Amet explicabo molestiae perspiciatis ut provident mollitia reprehenderit omnis fuga modi voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi doloremque officiis alias similique beatae illum necessitatibus aliquam, hic, digniss</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="main-inner-quality">
-                    <div class="quality-content qulity-image">
-                        <img src="images/quality.png" alt="imgQuality">
+            </article>
+            <!-- About -->
+
+            <!-- Quality -->
+            <article class="quality" id="quality">
+                <div class="main-quality">
+                    <div class="main-inner-quality">
+                        <div class="quality-content">
+                            <h1>Our food quality</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia obcaecati architecto corporis fugit magni molestiae, itaque molestias beatae quas, eveniet nesciunt quia? Molestias, ab error vitae facere quos qui. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi omnis itaque commodi pariatur quia, minima ullam sunt. Sunt, natus magni laborum ipsam, dolor reprehenderit exercitationem consectetur nesciunt error iure odit!</p>
+                        </div>
+                    </div>
+                    <div class="main-inner-quality">
+                        <div class="quality-content qulity-image">
+                            <img src="images/quality.png" alt="imgQuality">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Quality -->
+            </article>
+            <!-- Quality -->
 
-        <!--Img End -->
-        <div class="containerImg">
-            <img src="images/Picture1.png" alt="before" class="before">
-        </div>
-        <!--Img End -->
+            <!--Img End -->
+            <article class="containerImg">
+                <img src="images/Picture1.png" alt="before" class="before">
+            </article>
+            <!--Img End -->
+        </section>
 
         <!--Footer-->
         <footer>
             <div class="main-footer">
-                <div class="footer-logo"><img src="images/footerlogo.png" alt=""></div>
+                <div class="footer-logo"><img src="images/footerlogo.png" alt="logo"></div>
             </div>
             <div class="footer_main">
                 <div class="footer_tag">
                     <h2>Location</h2>
-                    <p>Egypt</p>
-                    <p>USA</p>
-                    <p>China</p>
-                    <p>Japan</p>
-                    <p>Italy</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Egypt</p>
+                    <p><i class="fas fa-map-marker-alt"></i>USA</p>
+                    <p><i class="fas fa-map-marker-alt"></i>China</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Japan</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Italy</p>
                 </div>
                 <div class="footer_tag">
                     <h2>Quick Link</h2>
-                    <a href="#Home">Home</a>
-                    <a href="#About">About</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="menu.html">Menus</a>
-                    <a href="order.html">Order</a>
+                    <a href="#home" class="links"><i class="fas fa-arrow-right"></i>Home</a>
+                    <a href="#about" class="links"><i class="fas fa-arrow-right"></i>About</a>
+                    <a href="gallery.html#gallery" class="links"><i class="fas fa-arrow-right"></i>Gallery</a>
+                    <a href="menu.html#menu" class="links"><i class="fas fa-arrow-right"></i>Menus</a>
+                    <a href="order.html#order" class="links"><i class="fas fa-arrow-right"></i>Order</a>
                 </div>
-                <div class="footer_tag" id="Contact">
+                <div class="footer_tag" id="contact">
                     <h2>Contact</h2>
-                    <p>+20 12 4568 102</p>
-                    <p>+94 25 5568456</p>
-                    <a href="mailto:mernamamdouh2@gmail.com?subject=Hello" target="_blank">mernamamdouh2@gmail.com</a>
-                    <a href="mailto:foodloverR@gmail.com?subject=Hello" target="_blank">foodloverR@gmail.com</a>
+                    <a href="#" class="links"><i class="fas fa-phone"></i>+20 12 4568 102</a>
+                    <a href="#" class="links"><i class="fas fa-phone"></i>+94 25 5568456</a>
+                    <a href="mailto:mernamamdouh2@gmail.com?subject=Hello" target="_blank" class="links"><i class="fas fa-envelope"></i>merna.m2@gmail.com</a>
+                    <a href="mailto:foodloverR@gmail.com?subject=Hello" target="_blank" class="links"><i class="fas fa-envelope"></i>foodloverR@gmail.com</a>
                 </div>
                 <div class="footer_tag">
                     <h2>Our Service</h2>
@@ -150,6 +156,7 @@
                     <i class="fa-brands fa-linkedin-in"></i>
                 </div>
             </div>
+            
             <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> Merna Mamdouh</span></p>
         </footer>
         <!--Footer-->
@@ -166,10 +173,15 @@
         </a>      
         <!--BACK TO TOP-->
 
-
+        <!-- Loading -->
+        <div class="loader-container">
+            <img src="images/loader.gif" alt="load">
+        </div>
+        <!-- Loading -->
+    
         <!-- scroll reveal javascript link -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-       
+
         <!-- javascript link here -->
         <script src="script.js"></script>
 
